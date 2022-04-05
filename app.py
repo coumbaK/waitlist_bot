@@ -87,8 +87,8 @@ class sms_system :
 
     def update_queue (self) :
           try :
-                next_patron = self.queue.dequeue()
-                self.send_sms(next_patron)
+                next_person = self.queue.dequeue()
+                self.send_sms(next_person)
 
           except : 
                 print ('queue is empty')
